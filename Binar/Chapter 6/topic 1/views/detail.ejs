@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles | <%= title %>
+  </title>
+
+</head>
+
+<body>
+
+  <div>
+    <h1>
+      <%= title %>
+    </h1>
+    <p>
+      <%= body %>
+    </p>
+  </div>
+
+  <br>
+
+  <div>
+    <form method="POST" action="/articles/<%= id %>">
+
+      <label for="title">Edit Title</label>
+      <br>
+      <input type="text" name="title" value="<%=article%>" />
+      <br>
+
+      <label for="body">Edit Body</label>
+      <br>
+      <input type="text" name="body" value="<%=body%>"/>
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>

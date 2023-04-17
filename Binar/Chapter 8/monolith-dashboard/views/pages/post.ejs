@@ -1,0 +1,25 @@
+<div class="px-0 py-4">
+  <a href="/dashboard/post/create" class="btn btn-lg btn-success">Create Post</a>
+</div>
+<div class="list-group">
+  <% data.posts.forEach(post=> { %>
+    <div class="list-group-item">
+      <a href="/dashboard/post/<%= post.id %>" class="list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">
+            <%= post.title %>
+          </h5>
+          <small>
+            <%= post.fromNow %>
+          </small>
+        </div>
+        <p class="mb-1">
+          <%= post.body %>
+        </p>
+        <small>
+          <%= post.createdAt %>
+        </small>
+      </a>
+    </div>
+    <% }) %>
+</div>

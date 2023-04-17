@@ -1,0 +1,18 @@
+<div class="row">
+   <% data.statistic.forEach(stat => { %>
+      <div class="col-xl-4 col-md-6 mb-4">
+         <div class="card h-100 py-2">
+            <div class="card-body">
+               <div class="col mr-2">
+                  <div class="text-xs mb-0 font-weight-bold text-grey text-uppercase">
+                  <%= stat.title %>
+                  </div>
+               </div>
+               <div class="h5 mb-0 font-weight-bold text-grey">
+                  <%= stat.value %>
+               </div>
+            </div>
+         </div>
+      </div>
+      <% }) %>
+</div>

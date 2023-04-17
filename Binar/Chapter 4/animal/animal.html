@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="type">Choose an animal:</label><br />
+    <select id="typeList" name="type">
+      <option value="lion">Lion</option>
+      <option value="shark">Shark</option>
+      <option value="eagle">Eagle</option></select
+    ><br /><br />
+    <div id="form-item-name">
+      <label for="name">Name</label><br />
+      <input type="text" id="name" />
+    </div>
+    <div id="form-item-sound">
+      <label for="sound">Sound</label><br />
+      <input type="text" id="sound" />
+    </div>
+    <div id="form-item-color">
+      <label for="color">Color</label><br />
+      <input type="text" id="color" />
+    </div>
+    <div id="form-item-swim-depth">
+      <label for="swim-depth">Swim Depth</label><br />
+      <input type="text" id="swimDepth" />
+    </div>
+    <div id="form-item-speed">
+      <label for="speed">Speed</label><br />
+      <input type="text" id="speed" />
+    </div>
+    <br /><input type="submit" onclick="handleButtonClick()" />
+    <p>Lion</p>
+    <ul id="lionList"></ul>
+    <p>Shark</p>
+    <ul id="sharkList"></ul>
+    <p>Eagle</p>
+    <ul id="eagleList"></ul>
+  </body>
+  <script src="./animal.js"></script>
+</html>

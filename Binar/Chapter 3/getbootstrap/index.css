@@ -1,0 +1,14 @@
+.satu {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), to(black)), url("../assets/main-bg.jpg");
+  background-image: linear-gradient(to bottom, transparent 70%, black 100%), url("../assets/main-bg.jpg");
+  height: 100vh;
+  background-size: 1600px;
+
+}
+
+.dua {
+ background-image: url("../assets/features.jpg");
+ height: 100vh;
+ background-size: 1600px;
+}
+

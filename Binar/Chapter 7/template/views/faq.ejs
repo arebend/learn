@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<%- include("partials/head"); %>
+
+  <body>
+
+    <%- include("partials/navbar"); %>
+      <h1>FAQ PAGE</h1>
+
+      <% faqs.forEach(faq=> { %>
+        <% if (faq.important) { %>
+          <p>IMPORTANT</p>
+
+          <p>
+            <span style="color: #f60c04;"> QUESTION :</span>
+            <%= faq.question %>
+          </p>
+
+          <p>
+            <span style="color: #0d7fd0;"> ANSWER :</span>
+            <%= faq.answer %>
+          </p>
+
+          <% } %>
+      <% }) %>
+  </body>
+
+</html>
